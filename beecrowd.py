@@ -13,6 +13,24 @@ def problema1002(raio):
     area = pi * (raio*raio)
     print("A=%.4f" % area)
 
+def problema1051(renda):
+    renda = float(input())
+
+    if renda <=  2000:
+        print("Isento")
+    elif renda >= 2000.01 and renda <= 3000.00:
+        renda -= 2000
+        imposto = (8/100) * renda
+        print(imposto)
+    elif renda >= 3000.01 and renda <= 4500.00:
+        renda -= 3000
+        imposto = (8/100) * 1000 + (18/100) * renda
+        print(imposto)
+    elif renda > 4500.00:
+        renda -= 4500
+        imposto = (8/100) * 1000 + (18/100) * 1500 + (28/100) * renda
+        print(imposto)
+
 def problema1052(mes):
     mes = int(input())
 
