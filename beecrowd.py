@@ -1,19 +1,25 @@
 def problema1000():
     print('Hello World!')
 
-def problema1001(a, b):
+def problema1001():
     a = int(input())
     b = int(input())
     x = a + b
     print('X =', x)
 
-def problema1002(raio):
+def problema1002():
     pi = 3.14159
     raio = float(input())
     area = pi * (raio*raio)
     print("A=%.4f" % area)
 
-def problema1051(renda):
+def problema1005():
+    a = float(input())
+    b = float(input())
+    result = ((a*3.5) + (b*7.5))/11
+    print(f"MEDIA = {result:.5f}")
+
+def problema1051():
     renda = float(input())
 
     if renda <=  2000:
@@ -31,7 +37,7 @@ def problema1051(renda):
         imposto = (8/100) * 1000 + (18/100) * 1500 + (28/100) * renda
         print(imposto)
 
-def problema1052(mes):
+def problema1052():
     mes = int(input())
 
     if mes == 1:
