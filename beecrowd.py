@@ -13,6 +13,12 @@ def problema1002():
     area = pi * (raio*raio)
     print("A=%.4f" % area)
 
+def problema1003():
+    a = int(input())
+    b = int(input())
+    soma = a + b
+    print(f"SOMA = {soma}")
+
 def problema1005():
     a = float(input())
     b = float(input())
