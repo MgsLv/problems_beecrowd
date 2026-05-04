@@ -72,7 +72,24 @@ def problema1052():
         print("December")
     else:
         print("Error")
+
+def problema1541():
+    while True:
+    try:
     
+        numeros = input().split(" ")
+        if numeros == "0":
+            break
+        
+        lNum= [int(i) for i in numeros]
+        
+        calc = (lNum[0] * lNum[1]) * (100/lNum[2])
+        result = int(calc ** 0.5)
+        
+        print(result)
+    except EOFError:
+        break
+
 def main():
     problema1000()
 
