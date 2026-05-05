@@ -92,6 +92,33 @@ def problema1541():
         except EOFError:
             break
 
+def problema1168():
+    entrada = input().upper()
+
+matriz = []
+for i in range(12):
+    linha = []
+    for j in range(12):
+        valor = float(input())
+        linha.append(valor)
+    matriz.append(linha)
+    
+soma = 0
+quant_elementos = 0
+
+for i in range(12):
+    for j in range(12):
+        if i + j > 11:
+            soma += matriz[i][j]
+            quant_elementos += 1
+    
+resultado = soma / quant_elementos
+
+if entrada == "S":
+    print(f"{soma:.1f}")
+elif entrada == "M":
+    print(f"{resultado:.1f}")
+
 
 def main():
     problema1000()
