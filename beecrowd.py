@@ -95,29 +95,64 @@ def problema1541():
 def problema1168():
     entrada = input().upper()
 
-matriz = []
-for i in range(12):
-    linha = []
-    for j in range(12):
-        valor = float(input())
-        linha.append(valor)
-    matriz.append(linha)
+    matriz = []
+    for i in range(12):
+        linha = []
+        for j in range(12):
+            valor = float(input())
+            linha.append(valor)
+        matriz.append(linha)
+        
+    soma = 0
+    quant_elementos = 0
     
-soma = 0
-quant_elementos = 0
-
-for i in range(12):
-    for j in range(12):
-        if i + j > 11:
-            soma += matriz[i][j]
-            quant_elementos += 1
+    for i in range(12):
+        for j in range(12):
+            if i + j > 11:
+                soma += matriz[i][j]
+                quant_elementos += 1
+        
+    resultado = soma / quant_elementos
     
-resultado = soma / quant_elementos
+    if entrada == "S":
+        print(f"{soma:.1f}")
+    elif entrada == "M":
+        print(f"{resultado:.1f}")
 
-if entrada == "S":
-    print(f"{soma:.1f}")
-elif entrada == "M":
-    print(f"{resultado:.1f}")
+def problema1847():
+    entrada = input().split()
+    a = int(entrada[0])
+    b = int(entrada[1])
+    c = int(entrada[2])
+    
+    feliz = False
+    
+    if b < a: 
+        if c >= b:
+            feliz = True
+        elif (b - c) < (a - b):
+            feliz = True
+        else:
+            feliz = False
+    
+    elif b > a:
+        if c <= b:
+            feliz = False
+        elif (c - b) < (b - a): 
+            feliz = False
+        else: 
+            feliz = True
+    
+    else: 
+        if c > b: 
+            feliz = True
+        else: 
+            feliz = False
+    
+    if feliz:
+        print(":)")
+    else:
+        print(":(")
 
 
 def main():
