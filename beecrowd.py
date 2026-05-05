@@ -75,20 +75,23 @@ def problema1052():
 
 def problema1541():
     while True:
-    try:
-    
-        numeros = input().split(" ")
-        if numeros == "0":
+        try:
+            entrada = input().split(" ")
+            if not entrada or entrada[0] == '0':
+                break
+            
+            a = int(entrada[0])
+            b = int(entrada[1])
+            c = int(entrada[2])
+            
+            area_casa = a * b
+            area_total = (area_casa * 100) / c 
+            lado = int(area_total ** 0.5)
+            
+            print(lado)
+        except EOFError:
             break
-        
-        lNum= [int(i) for i in numeros]
-        
-        calc = (lNum[0] * lNum[1]) * (100/lNum[2])
-        result = int(calc ** 0.5)
-        
-        print(result)
-    except EOFError:
-        break
+
 
 def main():
     problema1000()
