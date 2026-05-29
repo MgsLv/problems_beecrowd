@@ -197,7 +197,32 @@ def problema1847():
     else:
         print(":(")
 
+def problema3053N4():
+    qtdMovimentos = int(input())
 
+    moeda = input()
+    
+    for _ in range(qtdMovimentos):
+        
+        movimento = int(input())
+        if movimento == 1:
+            if moeda == 'A':
+                moeda = 'B'
+            elif moeda == 'B':
+                moeda = 'A'
+        elif movimento == 2:
+            if moeda == 'B':
+                moeda = 'C'
+            elif moeda == 'C':
+                moeda = 'B'
+        else: 
+            if moeda == 'A':
+                moeda = 'C'
+            elif moeda == 'C':
+                moeda = 'A'
+                
+    print(moeda)
+        
 def main():
     problema1000()
 
