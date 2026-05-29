@@ -146,6 +146,22 @@ def problema1168():
     elif entrada == "M":
         print(f"{resultado:.1f}")
 
+def problema1168N3():
+    vezes = int(input())
+
+    valorLeds = [6, 2, 5, 5, 4, 5, 6, 3, 7, 6]
+    
+    for _ in range(vezes):
+        numero = input().strip()
+        
+        leds = 0
+        
+        for num in numero:
+            digito = int(num)
+            leds += valorLeds[digito]
+            
+        print(f"{leds} leds")
+
 def problema1847():
     entrada = input().split()
     a = int(entrada[0])
