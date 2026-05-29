@@ -25,6 +25,33 @@ def problema1005():
     result = ((a*3.5) + (b*7.5))/11
     print(f"MEDIA = {result:.5f}")
 
+def problema1041():
+    cord = []
+
+while len(cord) < 2:
+    linha = input().split()
+        for valor in linha:
+            cord.append(float(valor))
+        
+    cordX = float(cord[0])
+    cordY = float(cord[1])
+    
+    if cordX > 0 and cordY > 0:
+        print("Q1")
+    elif cordX > 0 and cordY < 0:
+        print("Q4")
+    elif cordX < 0 and cordY > 0:
+        print("Q2")
+    elif cordX < 0 and cordY < 0:
+        print("Q3")
+    elif cordX == 0 and cordY == 0:
+        print("Origem")
+    elif cordX == 0:
+        print("Eixo Y")
+    elif cordY == 0:
+        print("Eixo X")
+
+
 def problema1051():
     renda = float(input())
 
