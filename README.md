@@ -1,4 +1,4 @@
-# problems_beecrowd
+# resolucao_desafios_logica
 
 Resoluções de exercícios de lógica de programação da plataforma Beecrowd.
 
