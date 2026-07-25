@@ -6,9 +6,8 @@ Resoluções de exercícios de lógica de programação da plataforma Beecrowd.
 - Python
 
 ## Como rodar o projeto
-1. Abra a pasta do problema desejado.
-2. Execute o arquivo `.py` no terminal:
+1. Abra a pasta da linguagem Python.
+2. Execute o arquivo `main.py` no terminal:
    ```bash
-   python nome_do_arquivo.py
-
+   python main.py
 3. Digite a entrada conforme o enunciado do Beecrowd.
